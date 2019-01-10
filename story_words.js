@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 
 (async () => {
-  const browser = await puppeteer.launch({headless: false, args: [ '--proxy-server=165.225.116.16:80' ] });
+  const browser = await puppeteer.launch({headless: false, args: [ '--proxy-server=IP:PORT' ] });
   const page = await browser.newPage();
   await page.setViewport({width: 768, height: 1024, deviceScaleFactor: 2})
   
